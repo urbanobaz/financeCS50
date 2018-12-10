@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <h2 class>Register for CS50 Finance</h2>
+    <div>
+        <form action="/register" class="form" method="post">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirmation" class="form-control" placeholder="Confirm Password" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Register</button>
+
+        </form>
+    </div>
+{% endblock %}
